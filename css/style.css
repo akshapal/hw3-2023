@@ -1,0 +1,127 @@
+
+body{
+   /* Set line spacing */
+   line-height: 1
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 90px, 50px, 60px, 70px;
+    margin: 90px, 50px, 60px, 70px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 50px;
+    padding: 20px;
+    font-size: medium;
+    background-color:antiquewhite;
+
+}
+
+nav a{
+    /* Set text decoration*/
+    list-style-type: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration-style: wavy;
+    text-underline-offset: 7px;
+    text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:wght@300&display=swap');
+
+h1{
+   /*Set font and font size*/
+   font-size: 40px;
+   font-family: 'Merriweather', 'Anton', 'Times New Roman', Cambria;
+
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-size: 30px;
+    font-family: 'Anton', 'Times New Roman', Cambria;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: larger;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 15px;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+   display: grid;
+   grid-template-columns: repeat(3, 30%);
+   margin: 10%;
+   border-radius: 10px;
+   row-gap: 30px;
+   column-gap: 50px;
+   background-color: grey;
+
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    background-color: whitesmoke;
+
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    margin: 18px;
+    width: 90%;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 0px 3px 0px 0px;
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+    box-shadow: 0px 0px 0px 3px;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 0px 3px 0px 3px;
+}
+    
+
+p + p {
+     /* Set indentation */
+     text-indent: 20px;
+  }
+  
+p{
+     /* Set margin */
+     margin-top: 20px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+    list-style-image: image(sketchbook.png);
+}
